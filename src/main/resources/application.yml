@@ -6,3 +6,6 @@ spring:
       enabled: false
   freemarker:
     cache: false
+java:
+  runtime:
+    version=11:
