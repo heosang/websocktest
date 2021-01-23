@@ -9,3 +9,5 @@ spring:
 java:
   runtime:
     version=11:
+properties:
+  "java.version": 11
