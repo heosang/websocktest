@@ -7,6 +7,7 @@ import com.sang.socketPrac.service.ChatService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
@@ -17,6 +18,7 @@ import org.springframework.web.socket.handler.TextWebSocketHandler;
 @RequiredArgsConstructor
 //직접 작성한 class 를 bean으로 등록하기 위한 annotation
 @Component
+@CrossOrigin
 public class WebSocketHandler extends TextWebSocketHandler {
 
     private final ObjectMapper objectMapper;
